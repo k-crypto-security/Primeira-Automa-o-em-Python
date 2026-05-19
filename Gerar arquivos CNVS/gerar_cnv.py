@@ -13,11 +13,10 @@ import time
 ARQUIVO_EXCEL = "vigilantes.xlsx"
 MODELO_WORD = "modelo.docx"
 PASTA_SAIDA = "documentos_gerados"
-CIDADE = "Salvador"
 
 
 # IP DA IMPRESSORA
-IP_IMPRESSORA = "192.168.15.21"
+IP_IMPRESSORA = "192.168.00.100"
 
 
 # =========================
@@ -108,7 +107,7 @@ for index, linha in dados.iterrows():
             "turma": linha["turma"],
             "posto": linha["posto"],
             "data": data_hoje,
-            "cidade": CIDADE
+            
         }
 
 
